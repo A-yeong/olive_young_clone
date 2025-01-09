@@ -10,3 +10,42 @@
     width: 100%;
     min-width: 1020px;
 }
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #d0d0d0;
+    color: #888;
+    background: 0 0;
+    box-shadow: none;
+    letter-spacing: .5px;
+    vertical-align: top;
+}
+
+button{
+    text-align: center;
+    color: #fff;
+}
