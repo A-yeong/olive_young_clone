@@ -23,7 +23,7 @@
     position: relative;
     width: 340px;
     height: 40px;
-    margin: 22px 0 0 90px;
+    margin: 22px 0 0 80px;
     border: 1px solid #82dc28;
     background: #fff;
     border-radius: 20px;
@@ -56,4 +56,64 @@
     text-indent: -9999px;
     margin-right: 4px;
     border: none;
+}
+
+.header_inner .mymenu_area {
+    float: left;
+    padding-inline-start: 1cap;
+    margin: 10px 10px 10px 0;
+}
+
+.header_inner .mymenu_area>li{
+    float: left;
+    position: relative;
+    height: 65px;
+    padding: 17px 9px 0 10px;
+}
+
+.header_inner .mymenu_area>li>a{
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+    z-index: 30;
+    font-weight: 200;
+}
+
+.header_inner .mymenu_area>li.delivery{
+    float: left;
+    position: relative;
+    height: 65px;
+}
+
+.header_inner .mymenu_area>li.delivery::after{
+    display: none;
+}
+
+.header_inner .mymenu_area>li.delivery .mymenu_layer {
+    padding: 3px 27px 3px 0;
+    background: url("../img/today_delivery_logo.png") right 2px / 22px 20px no-repeat;
+}
+
+.header_inner .mymenu_area>li::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 1px;
+    height: 15px;
+    background-color: #d6d6d6;
+}
+
+.header_inner .mymenu_area>li::after{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    background:url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_arrow11x72.png) no-repeat;
+    margin: 0 0 2px 4px;
+}
+
+.header_inner .mymenu_area>li.recent::before{
+    display: none;
 }

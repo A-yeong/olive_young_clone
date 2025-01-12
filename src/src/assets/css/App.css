@@ -49,3 +49,23 @@ button{
     text-align: center;
     color: #fff;
 }
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li{
+    display: list-item;
+    unicode-bidi: isolate;
+}
