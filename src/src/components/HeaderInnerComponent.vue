@@ -20,10 +20,10 @@
                     <a href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0" class="mymenu_layer" title="올영매장찾기 자세히보기 열기/닫기">올영매장찾기</a>
                     <div class="alim_box" id="store_alim_box" style="display: none;">
                         <p class="store_desc">
-                            "지금 찾는 상품, "
+                            지금 찾는 상품, 
                             <span>가까운 매장에서 재고 확인</span>
                             <br>
-                            "올영매장에서 재고 확인하고, 빠르게 픽업 주문까지!"
+                            올영매장에서 재고 확인하고, 빠르게 픽업 주문까지!
                         </p>
                         <button class="mymenu_btn" onclick="">로그인</button>
                     </div>

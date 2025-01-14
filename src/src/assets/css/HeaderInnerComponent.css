@@ -79,6 +79,51 @@
     font-weight: 200;
 }
 
+.header_inner .mymenu_area .alim_box {
+    display: none;
+    position: absolute;
+    top: 61px;
+    right: 0;
+    width: 595px;
+    height: 180px;
+    padding: 20px;
+    border: 1px solid #d5d5d5;
+    z-index: 20;
+    background: #fff;
+    text-align: center;
+}
+
+.header_inner .mymenu_area .alim_box .store_desc {
+    display: table-cell;
+    width: 553px;
+    height: 75px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #d5d5d5;
+    line-height: 22px;
+    text-align: center;
+    color: #888;
+    vertical-align: middle;
+    box-sizing: content-box;
+    font-weight: 700;
+}
+
+.header_inner .mymenu_area .alim_box .store_desc>span {
+    color: #82dc28;
+}
+
+.header_inner .mymenu_area .mymenu_btn {
+    display: inline-block;
+    height: 32px;
+    margin: 14px 0 0;
+    padding: 0 27px;
+    line-height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #888;
+    font-size: 14px;
+}
+
 .header_inner .mymenu_area>li.delivery{
     float: left;
     position: relative;
