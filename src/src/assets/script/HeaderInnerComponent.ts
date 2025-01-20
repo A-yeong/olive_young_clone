@@ -4,6 +4,8 @@ export function setupEventListeners() {
     const todayDeliveryTooltip = document.getElementById('todayDeliveryTooltip');
     const store = document.getElementById('store');
     const alimBox = document.getElementById('store_alim_box');
+    const recentPrdBox = document.querySelector('.recent_prd_box') as HTMLElement;
+    const recent = document.getElementById('recent');
 
     if (todayDeliveryContainer && todayDeliveryTooltip) {
         todayDeliveryContainer.addEventListener('mouseenter', () => {
@@ -20,6 +22,18 @@ export function setupEventListeners() {
         });
         store.addEventListener('mouseleave', () => {
             alimBox.style.display = 'none';
+        });
+    }
+
+    if (recent && recentPrdBox) {
+        recent.addEventListener('click', () => {
+            recentPrdBox.style.display = 'block';
+        });
+    }
+
+    if (recent) {
+        recent.addEventListener('mouseleave', () => {
+            recentPrdBox.style.display = 'none';
         });
     }
 }

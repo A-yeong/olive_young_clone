@@ -14,7 +14,11 @@
             <ul class="mymenu_area">
                 <li id="todayDeliveryContainer" class="delivery">
                     <a href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0" id="tddlvr_header_today_icon" class="mymenu_layer" title="오늘드림 자세히 보기 열기/닫기">오늘드림</a>
-                    <div class="tooltip" id="todayDeliveryTooltip" style="display: none;">오늘드림 상세 정보</div>
+                    <div class="delivery_box_wrap" id="todayDeliveryTooltip" style="display: none;">
+                        <div class="delivery_box">
+                            <p class="dTxt">배송지를 등록하고 오늘드림으로 구매 가능한 상품을 확인하세요!</p>
+                        </div>
+                    </div>
                 </li>
                 <li id="store">
                     <a href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0" class="mymenu_layer" title="올영매장찾기 자세히보기 열기/닫기">올영매장찾기</a>
@@ -29,17 +33,15 @@
                     </div>
                 </li>
                 <li id="recent">
-                    <a onclick="" href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0" class="mymenu_layer" title="최근 본 상품 자세히 보기 열기/닫기">최근 본 상품</a>
-                    <!--
+                    <a onclick="" class="mymenu_layer" title="최근 본 상품 자세히 보기 열기/닫기">최근 본 상품</a>
                     <div class="recent_prd_box" style="min-height: 510px;">
                         <p class="recent_tit">
-                            "전체"
+                            전체
                             <span>0</span>
-                            "개 "
+                            개
                         </p>
-                        <div class="no_data" style="display: none;">최근 본 상품이 없습니다.</div>
+                        <div class="no_data">최근 본 상품이 없습니다.</div>
                     </div>
-                    -->
                 </li>
             </ul>
         </div>
