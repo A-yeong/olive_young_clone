@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    display: block;
+}
+
+body, html {
+    word-spacing: -1px;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.04em;
+}
+
 #app{
     display: flex;
     justify-content: center;
@@ -68,4 +80,10 @@ ol, ul {
 li{
     display: list-item;
     unicode-bidi: isolate;
+}
+
+a, address, blockquote, body, dd, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, img, input, label, li, ol, p, pre, select, span, strong, textarea, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }

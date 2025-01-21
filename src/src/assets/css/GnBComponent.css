@@ -1,0 +1,183 @@
+#Gnb {
+    position: relative;
+    width: 100vw;
+    min-width: 1020px;
+    height: 47px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 2px solid #555;
+    z-index: 10;
+}
+
+#gnbWrap {
+    position: relative;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+#gnbWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#btnGnbOpen {
+    position: relative;
+    float: left;
+    width: 170px;
+    height: 44px;
+    padding-left: 27px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    line-height: 44px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    z-index: 1;
+}
+
+#btnGnbOpen::before{
+    content: "";
+    display: inline-block;
+    margin: 0 8px 0 0;
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_menu_off.png) 0 14px no-repeat;
+    width: 24px;
+    height: 44px;
+    vertical-align: middle;
+}
+
+#Gnb .gnb_menu_list {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-right: 12px;
+}
+
+#Gnb .gnb_menu_list>li {
+    flex-shrink: 0;
+    margin-left: 45px;
+}
+
+#Gnb .gnb_menu_list>li:first-child{
+    margin-left: 0;
+}
+
+#Gnb .gnb_menu_list>li>a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.04em;
+}
+
+#Gnb .layer_all_menu {
+    position: absolute;
+    top: 46px;
+    width: 1020px;
+    border: 1px solid #99a1a8;
+    background: #fff;
+    z-index: 20;
+    display: none;
+}
+
+#Gnb .layer_all_menu.active{
+    display: block;
+}
+
+#Gnb .all_menu_wrap {
+    display: table;
+    width: 100%;
+    padding: 18px 0 22px;
+}
+
+#btnGnbClose {
+    position: absolute;
+    bottom: 5px;
+    right: 6px;
+    width: 29px;
+    height: 29px;
+    text-align: -9999px;
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/close_gnb.gif) no-repeat;
+}
+
+#Gnb .all_menu_wrap>li {
+    display: table-ceil;
+    height: 100%;
+    vertical-align: top;
+}
+
+#Gnb.gen1 .all_menu_wrap>li{
+    padding: 0;
+}
+
+#Gnb .all_menu_wrap>li:first-child{
+    width: 508px;
+    border-left: none;
+}
+
+#Gnb .all_menu_wrap>li h2{
+    float: left;
+    width: calc(100% - 40px);
+    font-size: 16px;
+    margin: 0 20px 19px;
+    padding: 0 10px 12px;
+    border-bottom: 1px solid #dadde0;
+    color: #131518;
+}
+
+#Gnb .all_menu_wrap>li h2+.sub_menu_box {
+    padding: 0 9px 0 10px;
+}
+
+#Gnb .all_menu_wrap>li h2+.sub_menu_box~.sub_menu_box {
+    border-left: 0;
+}
+
+#Gnb .all_menu_wrap>li h2+.sub_menu_box~.sub_menu_box::before {
+    position: absolute;
+    top: 60px;
+    bottom: 20px;
+    width: 1px;
+    background-color: #f0f1f4;
+    transform: translateX(-10px);
+    content: "";
+}
+
+#Gnb .all_menu_wrap>li .sub_menu_box{
+    float: left;
+    min-height: 400px;
+    width: 169px;
+}
+
+#Gnb .all_menu_wrap .sub_menu_box .sub_depth:first-child {
+    margin-top: 0;
+}
+
+#Gnb .all_menu_wrap .sub_menu_box .sub_depth{
+    margin-top: 22px;
+    padding: 0 20px;
+}
+
+#Gnb .all_menu_wrap .sub_menu_box .sub_depth a {
+    position: relative;
+    height: 22px;
+    padding-right: 15px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    color: #131518;
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/arrow_12_21_02.png) 100% 5px / 5.5px no-repeat;
+}
+
+#Gnb .all_menu_wrap .sub_menu_box>ul {
+    margin: 7px 0 0;
+    padding: 0 20px;
+}
+
+#Gnb .all_menu_wrap .sub_menu_box>ul>li {
+    padding: 3px 0;
+}
