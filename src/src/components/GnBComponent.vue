@@ -7,443 +7,58 @@
                     <li>
                         <h2>뷰티</h2>
                         <div class="sub_menu_box">
-                            <p class="sub_depth">
-                                <a href="">스킨케어</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">스킨/토너</a>
-                                </li>
-                                <li>
-                                    <a href="">에센스/세럼/앰플</a>
-                                </li>
-                                <li>
-                                    <a href="">크림</a>
-                                </li>
-                                <li>
-                                    <a href="">로션</a>
-                                </li>
-                                <li>
-                                    <a href="">미스트/오일</a>
-                                </li>
-                                <li>
-                                    <a href="">스킨케어세트</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">마스크팩</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">시트팩</a>
-                                </li>
-                                <li>
-                                    <a href="">패드</a>
-                                </li>
-                                <li>
-                                    <a href="">페이셜팩</a>
-                                </li>
-                                <li>
-                                    <a href="">코팩</a>
-                                </li>
-                                <li>
-                                    <a href="">패치</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">클렌징</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">클렌징폼/젤</a>
-                                </li>
-                                <li>
-                                    <a href="">오일/밤</a>
-                                </li>
-                                <li>
-                                    <a href="">워터/밀크</a>
-                                </li>
-                                <li>
-                                    <a href="">필링&스크럽</a>
-                                </li>
-                                <li>
-                                    <a href="">티슈/패드</a>
-                                </li>
-                                <li>
-                                    <a href="">립&아이리무버</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">선케어</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">선크림림</a>
-                                </li>
-                                <li>
-                                    <a href="">선스틱</a>
-                                </li>
-                                <li>
-                                    <a href="">선쿠션</a>
-                                </li>
-                                <li>
-                                    <a href="">선스프레이/선패치</a>
-                                </li>
-                                <li>
-                                    <a href="">태닝/애프터선</a>
-                                </li>
-                            </ul>
+                            <SubMenu
+                                v-for="(subMenu, index) in beautyMenus1"
+                                :key="index"
+                                :title="subMenu.title"
+                                :items="subMenu.items"
+                            />
                         </div>
                         <div class="sub_menu_box">
-                            <p class="sub_depth">
-                                <a href="">메이크업</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">립메이크업</a>
-                                </li>
-                                <li>
-                                    <a href="">베이스메이크업</a>
-                                </li>
-                                <li>
-                                    <a href="">아이메이크업</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">뷰티소품</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">메이크업소품</a>
-                                </li>
-                                <li>
-                                    <a href="">스킨케어소품</a>
-                                </li>
-                                <li>
-                                    <a href="">아이소품</a>
-                                </li>
-                                <li>
-                                    <a href="">헤어/바디소품</a>
-                                </li>
-                                <li>
-                                    <a href="">괄사/네일소품</a>
-                                </li>
-                                <li>
-                                    <a href="">뷰티디바이스</a>
-                                </li>
-                                <li>
-                                    <a href="">뷰티잡화</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">더모 코스메틱</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">스킨케어</a>
-                                </li>
-                                <li>
-                                    <a href="">바디케어</a>
-                                </li>
-                                <li>
-                                    <a href="">클렌징</a>
-                                </li>
-                                <li>
-                                    <a href="">선케어</a>
-                                </li>
-                                <li>
-                                    <a href="">마스크팩</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">맨즈케어</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">스킨케어</a>
-                                </li>
-                                <li>
-                                    <a href="">메이크업</a>
-                                </li>
-                                <li>
-                                    <a href="">쉐이빙</a>
-                                </li>
-                                <li>
-                                    <a href="">헤어케어</a>
-                                </li>
-                                <li>
-                                    <a href="">바디케어</a>
-                                </li>
-                                <li>
-                                    <a href="">프래그런스/라이프</a>
-                                </li>
-                            </ul>
+                            <SubMenu
+                                v-for="(subMenu, index) in beautyMenus2"
+                                :key="index"
+                                :title="subMenu.title"
+                                :items="subMenu.items"
+                            />
                         </div>
                         <div class="sub_menu_box">
-                            <p class="sub_depth">
-                                <a href="">헤어케어</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">샴푸/린스</a>
-                                </li>
-                                <li>
-                                    <a href="">트리트먼트/팩</a>
-                                </li>
-                                <li>
-                                    <a href="">헤어에센스</a>
-                                </li>
-                                <li>
-                                    <a href="">염색약/펌</a>
-                                </li>
-                                <li>
-                                    <a href="">헤어기기/브러시</a>
-                                </li>
-                                <li>
-                                    <a href="">스타일링</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">바디케어</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">로션/오일</a>
-                                </li>
-                                <li>
-                                    <a href="">샤워/입욕</a>
-                                </li>
-                                <li>
-                                    <a href="">립케어</a>
-                                </li>
-                                <li>
-                                    <a href="">핸드케어</a>
-                                </li>
-                                <li>
-                                    <a href="">바디미스트</a>
-                                </li>
-                                <li>
-                                    <a href="">제모/왁싱</a>
-                                </li>
-                                <li>
-                                    <a href="">데오드란트</a>
-                                </li>
-                                <li>
-                                    <a href="">선물세트</a>
-                                </li>
-                                <li>
-                                    <a href="">베이비</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">향수/디퓨저</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">여성향수</a>
-                                </li>
-                                <li>
-                                    <a href="">남성향수</a>
-                                </li>
-                                <li>
-                                    <a href="">유니섹스향수</a>
-                                </li>
-                                <li>
-                                    <a href="">미니/고체향수</a>
-                                </li>
-                                <li>
-                                    <a href="">홈프래그런스</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">네일</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">일반네일</a>
-                                </li>
-                                <li>
-                                    <a href="">젤네일</a>
-                                </li>
-                                <li>
-                                    <a href="">네일팁/스티커</a>
-                                </li>
-                                <li>
-                                    <a href="">네일케어</a>
-                                </li>
-                            </ul>
+                            <SubMenu
+                                v-for="(subMenu, index) in beautyMenus3"
+                                :key="index"
+                                :title="subMenu.title"
+                                :items="subMenu.items"
+                            />
                         </div>
                     </li>
                     <li>
                         <h2>헬스&푸드</h2>
                         <div class="sub_menu_box">
-                            <p class="sub_depth">
-                                <a href="">건강식품</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">비타민</a>
-                                </li>
-                                <li>
-                                    <a href="">유산균</a>
-                                </li>
-                                <li>
-                                    <a href="">영양제</a>
-                                </li>
-                                <li>
-                                    <a href="">슬리밍</a>
-                                </li>
-                                <li>
-                                    <a href="">이너뷰티</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">푸드</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">식단관리/이너뮤티</a>
-                                </li>
-                                <li>
-                                    <a href="">과자/초콜릿/디저트</a>
-                                </li>
-                                <li>
-                                    <a href="">생수/음료/커피</a>
-                                </li>
-                                <li>
-                                    <a href="">간편식/요리</a>
-                                </li>
-                                <li>
-                                    <a href="">베이비푸드</a>
-                                </li>
-                            </ul>
-                            </div>
-                            <div class="sub_menu_box">
-                            <p class="sub_depth">
-                                <a href="">구강용품</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">칫솔</a>
-                                </li>
-                                <li>
-                                    <a href="">치약</a>
-                                </li>
-                                <li>
-                                    <a href="">애프터구강케어</a>
-                                </li>
-                                <li>
-                                    <a href="">휴대용세트</a>
-                                </li>
-                                <li>
-                                    <a href="">구강가전</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">헬스/건강용품</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">패치/겔</a>
-                                </li>
-                                <li>
-                                    <a href="">눈 관리 용품</a>
-                                </li>
-                                <li>
-                                    <a href="">생활/의료</a>
-                                </li>
-                                <li>
-                                    <a href="">마사지/헬스용품</a>
-                                </li>
-                                <li>
-                                    <a href="">풋케어</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">여성용품</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">생리/위생용품</a>
-                                </li>
-                                <li>
-                                    <a href="">Y존케어</a>
-                                </li>
-                                <li>
-                                    <a href="">성인용품</a>
-                                </li>
-                                <li>
-                                    <a href="">마사지젤/오일</a>
-                                </li>
-                                <li>
-                                    <a href="">테스트기</a>
-                                </li>
-                                <li>
-                                    <a href="">성인용 기저귀</a>
-                                </li>
-                            </ul>
+                            <SubMenu
+                                v-for="(subMenu, index) in healthMenus1"
+                                :key="index"
+                                :title="subMenu.title"
+                                :items="subMenu.items"
+                            />
+                        </div>
+                        <div class="sub_menu_box">
+                            <SubMenu
+                            v-for="(subMenu, index) in healthMenus2"
+                            :key="index"
+                            :title="subMenu.title"
+                            :items="subMenu.items"
+                            />
                         </div>
                     </li>
                     <li>
                         <h2>라이프</h2>
                         <div class="sub_menu_box">
-                            <p class="sub_depth">
-                                <a href="">패션</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">언더웨어</a>
-                                </li>
-                                <li>
-                                    <a href="">홈웨어</a>
-                                </li>
-                                <li>
-                                    <a href="">액티브웨어</a>
-                                </li>
-                                <li>
-                                    <a href="">패션잡화</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">리빙/가전</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">방향/탈취</a>
-                                </li>
-                                <li>
-                                    <a href="">세제/청소</a>
-                                </li>
-                                <li>
-                                    <a href="">홈데코/배스</a>
-                                </li>
-                                <li>
-                                    <a href="">가전</a>
-                                </li>
-                                <li>
-                                    <a href="">베이비</a>
-                                </li>
-                                <li>
-                                    <a href="">제지류</a>
-                                </li>
-                                <li>
-                                    <a href="">반려동물</a>
-                                </li>
-                            </ul>
-                            <p class="sub_depth">
-                                <a href="">취미/팬시</a>
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="">디지털/기기</a>
-                                </li>
-                                <li>
-                                    <a href="">문구/팬시</a>
-                                </li>
-                                <li>
-                                    <a href="">음반</a>
-                                </li>
-                            </ul>
+                            <SubMenu
+                                v-for="(subMenu, index) in lifeMenus"
+                                :key="index"
+                                :title="subMenu.title"
+                                :items="subMenu.items"
+                            />
                         </div>
                     </li>
                 </ul>
@@ -504,13 +119,239 @@
 import { defineComponent } from 'vue';
 import "../assets/css/GnBComponent.css";
 import { setupEventListeners } from '../assets/script/GnBComponent';
+import SubMenu from './SubMenu.vue';
 
 export default defineComponent({
     name: 'GnBComponent',
-    components:{},
+    components:{
+        SubMenu
+    },
     mounted() {
         setupEventListeners()
     },
+    data() {
+        return{
+            beautyMenus1: [
+                {
+                    title: "스킨케어",
+                    items: [
+                        { name: "스킨/토너", link: "#" },
+                        { name: "에센스/세럼/앰플", link: "#" },
+                        { name: "크림", link: "#" },
+                        { name: "로션", link: "#" },
+                        { name: "미스트/오일", link: "#" },
+                        { name: "스킨케어세트", link: "#" },
+                    ],
+                },
+                {
+                    title: "마스크팩",
+                    items: [
+                        { name: "시트팩", link: "#" },
+                        { name: "패드", link: "#" },
+                        { name: "페이셜팩", link: "#" },
+                        { name: "코팩", link: "#" },
+                        { name: "패치", link: "#" },
+                    ],
+                },
+                {
+                    title: "클렌징",
+                    items: [
+                        { name: "클렌징폼/젤", link: "#" },
+                        { name: "오일/밤", link: "#" },
+                        { name: "워터/밀크", link: "#" },
+                        { name: "필링&스크럽", link: "#" },
+                        { name: "티슈/패드", link: "#" },
+                        { name: "립&아이리무버", link: "#" },
+                    ],
+                },
+                {
+                    title: "선케어",
+                    items: [
+                        { name: "선크림", link: "#" },
+                        { name: "선스틱", link: "#" },
+                        { name: "선쿠션", link: "#" },
+                        { name: "선스프레이/선패치", link: "#" },
+                        { name: "태닝/애프터선", link: "#" },
+                    ],
+                },
+            ],
+            beautyMenus2: [
+                {
+                    title: "메이크업",
+                    items: [
+                        { name: "립메이크업", link: "#" },
+                        { name: "베이스메이크업", link: "#" },
+                        { name: "아이메이크업", link: "#" },
+                    ],
+                },
+                {
+                    title: "뷰티소품",
+                    items: [
+                        { name: "메이크업소품", link: "#" },
+                        { name: "스킨케어소품", link: "#" },
+                        { name: "아이소품", link: "#" },
+                        { name: "헤어/바디소품", link: "#" },
+                        { name: "괄사/네일소품", link: "#" },
+                        { name: "뷰티디바이스", link: "#" },
+                        { name: "뷰티잡화", link: "#" },
+                    ],
+                },
+                {
+                    title: "더모 코스메틱",
+                    items: [
+                        { name: "스킨케어", link: "#" },
+                        { name: "바디케어", link: "#" },
+                        { name: "클렌징", link: "#" },
+                        { name: "선케어", link: "#" },
+                        { name: "마스크팩", link: "#" },
+                    ],
+                },
+                {
+                    title: "맨즈케어",
+                    items: [
+                        { name: "스킨케어", link: "#" },
+                        { name: "메이크업", link: "#" },
+                        { name: "쉐이빙", link: "#" },
+                        { name: "헤어케어", link: "#" },
+                        { name: "바디케어", link: "#" },
+                        { name: "프래그런스/라이프", link: "#"},
+                    ],
+                },
+            ],
+            beautyMenus3: [
+                {
+                    title: "헤어케어",
+                    items: [
+                        { name: "샴푸/린스", link: "#" },
+                        { name: "트리트먼트/팩", link: "#" },
+                        { name: "헤어에센스", link: "#" },
+                        { name: "염색약/펌", link: "#" },
+                        { name: "헤어기기/브러시", link: "#" },
+                        { name: "스타일링", link: "#" },
+                    ],
+                },
+                {
+                    title: "바디케어",
+                    items: [
+                        { name: "로션/오일", link: "#" },
+                        { name: "샤워/입욕", link: "#" },
+                        { name: "립케어", link: "#" },
+                        { name: "핸드케어", link: "#" },
+                        { name: "바디미스트", link: "#" },
+                        { name: "제모/왁싱", link: "#" },
+                        { name: "데오드란트", link: "#" },
+                        { name: "선물세트", link: "#" },
+                        { name: "베이비", link: "#" },
+                    ],
+                },
+                {
+                    title: "향수/디퓨저",
+                    items: [
+                        { name: "여성향수", link: "#" },
+                        { name: "남성향수", link: "#" },
+                        { name: "유니섹스향수", link: "#" },
+                        { name: "미니/고체향수", link: "#" },
+                        { name: "홈프래그런스", link: "#" },
+                    ],
+                },
+                {
+                    title: "네일",
+                    items: [
+                        { name: "일반네일", link: "#" },
+                        { name: "젤네일", link: "#" },
+                        { name: "네일팁/스티커", link: "#" },
+                        { name: "네일케어어", link: "#" },
+                    ],
+                },
+            ],
+            healthMenus1: [
+                {
+                    title: "건강식품",
+                    items: [
+                        { name: "비타민", link: "#" },
+                        { name: "유산균", link: "#" },
+                        { name: "영양제", link: "#" },
+                        { name: "슬리밍", link: "#" },
+                        { name: "이너뷰티", link: "#" },
+                    ],
+                },
+                {
+                    title: "푸드",
+                    items: [
+                        { name: "식단관리/이너뷰티", link: "#" },
+                        { name: "과자/초콜릿/디저트", link: "#" },
+                        { name: "생수/음료/커피", link: "#" },
+                        { name: "간편식/요리", link: "#" },
+                        { name: "베이비푸드", link: "#" },
+                    ],
+                },
+            ],
+            healthMenus2: [
+                {
+                    title: "구강용품",
+                    items: [
+                        { name: "칫솔", link: "#" },
+                        { name: "치약", link: "#" },
+                        { name: "애프터구강케어", link: "#" },
+                        { name: "휴대용세트", link: "#" },
+                        { name: "구강가전전", link: "#" },
+                    ],
+                },
+                {
+                    title: "헬스/건강용품품",
+                    items: [
+                        { name: "패치/겔", link: "#" },
+                        { name: "눈 관리 용품", link: "#" },
+                        { name: "생활/의료", link: "#" },
+                        { name: "마사지/헬스용품", link: "#" },
+                        { name: "풋케어", link: "#" },
+                    ],
+                },
+                {
+                    title: "여성용품",
+                    items: [
+                        { name: "생리/위생용품", link: "#" },
+                        { name: "Y존케어", link: "#" },
+                        { name: "성인용품", link: "#" },
+                        { name: "마사지젤/오일", link: "#" },
+                        { name: "테스트기", link: "#" },
+                        { name: "성인용 기저귀", link: "#" },
+                    ],
+                },
+            ],
+            lifeMenus: [
+                {
+                    title: "패션",
+                    items: [
+                        { name: "언더웨어", link: "#" },
+                        { name: "홈웨어", link: "#" },
+                        { name: "액티브웨어", link: "#" },
+                        { name: "패션잡화", link: "#" },
+                    ],
+                },
+                {
+                    title: "리빙/가전",
+                    items: [
+                        { name: "방향/탈취", link: "#" },
+                        { name: "세제/청소", link: "#" },
+                        { name: "홈데코/배스", link: "#" },
+                        { name: "가전", link: "#" },
+                        { name: "베이비", link: "#" },
+                        { name: "제지류", link: "#" },
+                        { name: "반려동물", link: "#" },
+                    ],
+                },
+                {
+                    title: "취미/팬시",
+                    items: [
+                        { name: "디지털/기기", link: "#" },
+                        { name: "문구/팬시", link: "#" },
+                        { name: "음반", link: "#" },
+                    ],
+                },
+            ],
+        }
+    }
 
 })
 </script>
