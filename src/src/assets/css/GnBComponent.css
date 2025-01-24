@@ -83,6 +83,7 @@
     background: #fff;
     z-index: 20;
     display: none;
+    pointer-events: auto;
 }
 
 #Gnb .layer_all_menu.active{
@@ -116,8 +117,23 @@
 }
 
 #Gnb .all_menu_wrap>li:first-child{
+    float: left;
     width: 508px;
     border-left: none;
+}
+
+#Gnb .all_menu_wrap>li:first-child+li{
+    border-left: 1px solid #dadde0;
+    float: left;
+    width: 339px;
+    height: 850px;
+}
+
+#Gnb .all_menu_wrap>li:first-child+li+li{
+    border-left: 1px solid #dadde0;
+    float: left;
+    width: 169px;
+    height: 850px;
 }
 
 #Gnb .all_menu_wrap>li h2{
