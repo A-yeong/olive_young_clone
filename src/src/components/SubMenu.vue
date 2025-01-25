@@ -12,6 +12,11 @@
 <script lang="ts">
 import "../assets/css/SubMenu.css";
 
+interface Item {
+    name: string,
+    link: string
+}
+
 export default {
     name: "SubMenu",
     props: {
@@ -20,7 +25,7 @@ export default {
             required: true,
         },
         items: {
-            type: Array,
+            type: Array as () => Item[],
             required: true
         }
     },
