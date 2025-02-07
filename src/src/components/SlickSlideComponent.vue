@@ -1,18 +1,14 @@
 <template>
-    <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1627px; position: relative; left: -4881px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms;" tabindex="-1" role="option" aria-describedby="slick-slide01">
+    <div class="slick-slide" :data-slick-index=index aria-hidden="false" style="width: 1135px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="-1" role="option" aria-describedby="slick-slide01">
         <a onclick= "" href="" class="banner_link">
             <p class="banner_desc">
-                <span class="tit" style="color: #fff;">올영PICK</span>
+                <span class="tit" style="color: #fff;">{{ title }}</span>
                 <strong style="color: #fff;">
-                    올리브영이
-                    <br>
-                    PICK한
-                    <br>
-                    이 달의 브랜드
+                    {{ description1 }}
                 </strong>
-                <span style="color: #fff;">4일 특가 & 올리브 키트 증정</span>
+                <span style="color: #fff;">{{ description2 }}</span>
             </p>
-            <img src="../assets/img/slick01.jpg" alt="올리브영키트 4일 특가">
+            <img :src=imageSrc :alt=imgDesc>
         </a>
     </div>
 </template>
@@ -21,6 +17,14 @@
 import {defineComponent} from "vue";
 
 export default defineComponent({
-    name: "SlickSlideComponent"
+    name: "SlickSlideComponent",
+    props: {
+        imageSrc: String,
+        imgDesc: String,
+        title: String,
+        description1: String,
+        description2: String,
+        index: Number,
+    }
 });
 </script>

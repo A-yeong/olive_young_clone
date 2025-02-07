@@ -73,3 +73,12 @@
     letter-spacing: 1px;
     z-index: 2;
 }
+
+.main_full_banner .banner_wrap .slick-list, .main_full_banner .banner_wrap .slick-track {
+    min-width: 1020px;
+}
+
+.slick-track::after, .slick-track::before {
+    display: table;
+    content: "";
+}

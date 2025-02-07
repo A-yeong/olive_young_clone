@@ -10,10 +10,13 @@
                                 v-for="(slide, index) in slides"
                                 :key="index"
                                 :imageSrc="slide.image"
+                                :imgDesc="slide.imgDesc"
                                 :title="slide.title"
-                                :description="slide.description"
+                                :description1="slide.description1"
+                                :description2="slide.description2"
                                 :isActive="currentIndex === index"
                                 :index="index"/>
+                            
                         </div>
                     </div>
                     <button type="button" data-role = "none" class="slick-next slick-arrow" @click="nextSlide" aria-label="Next" role="button" style="display: block;">다음 슬라이드</button>
@@ -40,11 +43,11 @@ export default defineComponent({
     },
     setup() {
         const slides = ref([
-            { image: "../assets/img/slick01.jpg", title: "올영PICK", description: "올리브영이 PICK한\n이 달의 브랜드\n4일 특가 & 올리브 키트 증정" },
-            { image: "../assets/img/slick02.jpg", title: "스킨케어 추천", description: "촉촉한 겨울 피부를 위한\n베스트 스킨케어 제품" },
-            { image: "../assets/img/slick03.jpg", title: "신상품 입고", description: "최신 트렌드 뷰티 제품\n올리브영에서 만나보세요" },
-            { image: "../assets/img/slick04.jpg", title: "세일 이벤트", description: "한정 특가 세일!\n놓치면 후회할 가격" },
-            { image: "../assets/img/slick05.jpg", title: "뷰티 트렌드", description: "2025년 최신 뷰티 트렌드\n올리브영에서 확인하세요" }
+            { image: require('@/assets/img/slick01.jpg'), imgDesc: "올리브영키트 4일 특가", title: "올영PICK", description1 : "올리브영이 PICK한\n이 달의 브랜드\n4일 특가 & 올리브 키트 증정", description2: "4일 특가 & 올리브 키트 증정" },
+            { image: require('@/assets/img/slick02.jpg'), imgDesc: "올리브영키트 4일 특가", title: "스킨케어 추천", description1: "촉촉한 겨울 피부를 위한\n베스트 스킨케어 제품", description2: "4일 특가 & 올리브 키트 증정"  },
+            { image: require('@/assets/img/slick03.jpg'), imgDesc: "올리브영키트 4일 특가", title: "신상품 입고", description1: "최신 트렌드 뷰티 제품\n올리브영에서 만나보세요", description2: "4일 특가 & 올리브 키트 증정"  },
+            { image: require('@/assets/img/slick04.jpg'), imgDesc: "올리브영키트 4일 특가", title: "세일 이벤트", description1: "한정 특가 세일!\n놓치면 후회할 가격", description2: "4일 특가 & 올리브 키트 증정"  },
+            { image: require('@/assets/img/slick05.jpg'), imgDesc: "올리브영키트 4일 특가", title: "뷰티 트렌드", description1: "2025년 최신 뷰티 트렌드\n올리브영에서 확인하세요", description2: "4일 특가 & 올리브 키트 증정"  }
         ]);
         
         const currentIndex = ref(0);
